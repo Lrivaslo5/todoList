@@ -54,6 +54,9 @@ ul li.done::before {
     width: 7px;
 }
 
+
+
+
 /* Add style "Add" to the button */
 .addBtn{
     padding: 10px;
