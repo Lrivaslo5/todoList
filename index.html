@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
     <h1>Luis's To Do List</h1>
+    <input type="text" id="myInput" placeholder="Add new task...">
+    <span onclick ="newElement()" class="addBtn">Add</span>
   </header>
-</body>
 
+  <ul id = "tasklist">
+    <li class ="done">list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+  </ul>
+</body>
 </html>

@@ -1,0 +1,30 @@
+
+*{
+    box-sizing: border-box;
+}
+/* Remove margin and padding from list */
+ul {
+    margin:0;
+    padding:0;
+
+}
+/* Style list items */
+ul li{
+    cursor:pointer;
+    position:relative;
+    padding:12px 8px 12px 40px;
+    background: lightgray;
+    font-size:large;
+    transition: 0.3s;
+
+/* Make list items unselectable*/
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Set add list items to be different color */
+ul li:nth-child(even) {
+    background-color: lightcyan;
+}
