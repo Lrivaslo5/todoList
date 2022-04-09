@@ -54,6 +54,25 @@ ul li.done::before {
     width: 7px;
 }
 
+/* Add style to header*/
+h1 {
+    color: seashell;
+}
+header{
+    background-color: olivedrab;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Clear floats after header */
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
