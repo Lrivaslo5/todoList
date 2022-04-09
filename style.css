@@ -6,6 +6,7 @@
 ul {
     margin:0;
     padding:0;
+    border-style:double;
 
 }
 /* Style list items */
@@ -13,7 +14,7 @@ ul li{
     cursor:pointer;
     position:relative;
     padding:12px 8px 12px 40px;
-    background: lightgray;
+    background: whitesmoke;
     font-size:large;
     transition: 0.3s;
 
@@ -26,5 +27,9 @@ ul li{
 
 /* Set add list items to be different color */
 ul li:nth-child(even) {
-    background-color: lightcyan;
+    background-color: lightblue;
+}
+
+ul li:hover {
+    background: silver;
 }
