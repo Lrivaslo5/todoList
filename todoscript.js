@@ -20,7 +20,7 @@ for (var index = 0; index < close.length; index++) {
     }  
 }
 
-// Adding visual change for checked list items
+// Add a visual change for checked list items
 
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -29,3 +29,32 @@ list.addEventListener('click', function(ev) {
         ev.target.classList.toggle('done');
     }
 }, false);
+
+
+// Add capability to add new task list
+
+function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if(inputValue === '') {
+        alert("you must write something!");
+    } else {
+        document.getElementById("tasklist").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+}
+
+var span = document.createElement("SPAN");
+var text = document.createTextNode("\u00D7");
+span.classNAme = "close";
+span.appendChild(text);
+li.appendChild(span);
+
+for(i = 0; i < close.length; i++) { 
+    close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
+}
